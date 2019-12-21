@@ -1,0 +1,21 @@
+.social {
+  @include flex(flex-start);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 13px;
+}
+
+.social__item {
+  margin-right: 10px;
+  padding-bottom: 10px;
+
+  a {
+    @include transition(opacity);
+  }
+
+  a:hover,
+  a:focus {
+    opacity: 0.7;
+  }
+}
