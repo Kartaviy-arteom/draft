@@ -1,0 +1,34 @@
+.promo {
+  position: relative;
+  height: 1px;
+  min-height: 620px;
+  background-color: $good-4-color;
+}
+
+.promo__slider,
+.promo__wrapper {
+  height: 100%;
+}
+
+.promo__slider-pagination.swiper-pagination {
+  text-align: left;
+  bottom: 62px;
+}
+
+.promo__slider-pagination.swiper-pagination .swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  background: $secondary-font-color;
+  opacity: 0.6;
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.promo__slider-pagination.swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: $main-theme-color;
+}
+
+.promo__slider-title.title {
+  font-size: 44px;
+}
