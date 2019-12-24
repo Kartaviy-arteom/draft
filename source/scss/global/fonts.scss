@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: "DaxlinePro";
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/DaxlinePro-Light.woff2") format("woff2"),
+    url("../fonts/DaxlinePro-Light.woff") format("woff");
+}
+
+@font-face {
   font-family: "Roboto";
   font-weight: 700;
   font-display: swap;
