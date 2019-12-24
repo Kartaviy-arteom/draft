@@ -1,8 +1,11 @@
 .promo {
   position: relative;
-  height: 1px;
-  min-height: 620px;
+  height: auto;
   background-color: $good-4-color;
+  background-image: url("../img/promo-bcg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .promo__slider,
@@ -13,6 +16,8 @@
 .promo__slider-pagination.swiper-pagination {
   text-align: left;
   bottom: 62px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .promo__slider-pagination.swiper-pagination .swiper-pagination-bullet {
@@ -30,5 +35,28 @@
 }
 
 .promo__slider-title.title {
+  position: relative;
   font-size: 44px;
+  margin-bottom: 45px;
+
+  &::before {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 93px;
+    height: 3px;
+    background-color: $main-theme-color;
+  }
+}
+
+.promo__wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  min-height: 620px;
+}
+
+.promo__slider-slide p {
+  margin: 0;
+
 }
